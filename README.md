@@ -2,7 +2,11 @@
 
 ## Abstract
 
-This project represents an exploratory study in the field of image resolution enhancement, utilizing advanced regression and imputation techniques to upscale color images. By leveraging the XGBoost machine learning model, the project aims to investigate the effectiveness of such techniques in predicting pixel values and enhancing image quality. The primary objective is to assess how well XGBoost can be applied to image processing tasks, specifically in the context of increasing image resolution through pixel prediction.
+This project represents an exploratory study in the field of image resolution enhancement, utilizing advanced regression and imputation techniques to upscale color images. By leveraging the XGBoost machine learning model, the project aims to investigate the effectiveness of such techniques in predicting and generating pixel values to upscale an image.
+
+Below is an example of the results achieved through this project:
+
+![Test Result](TestResult.png)
 
 ## Introduction
 
@@ -26,7 +30,7 @@ The expansion is conducted sequentially for each column until the last column is
 
 Following the column expansion, the focus shifts to expanding the rows of the image. Similar to column expansion, new rows are introduced between existing rows. For each pixel in the original row, the value of a new pixel is predicted using XGBoost based on the values of neighboring pixels above and below. The model is trained on these adjacent pixel values to generate the new row pixels.
 
-This process is performed for each row until the final row is processed, after which no additional rows are added.
+This step is executed for each row until the final row is processed, after which no additional rows are added.
 
 ### 4. Result Compilation
 
@@ -36,9 +40,11 @@ The final step involves saving the upscaled image to a specified file path. This
 
 The primary aim of this project is to explore the applicability of regression and imputation techniques for image resolution enhancement. By employing XGBoost, the study seeks to evaluate the potential of such models in producing high-quality upscaled images. The outcomes of this research are intended to provide insights into the effectiveness of machine learning models for image processing tasks, and to contribute to the ongoing advancements in the field of image resolution enhancement.
 
-## Results and Discussion
+## Example
 
-The effectiveness of XGBoost in upscaling images will be analyzed based on the quality of the upscaled images and the accuracy of the pixel predictions. The results will be compared with traditional image upscaling methods to assess improvements in image detail and overall quality.
+Below is an example illustrating the process of image upscaling using XGBoost:
+
+![Test Result](TestResult.png)
 
 ## Requirements
 
@@ -50,7 +56,3 @@ The effectiveness of XGBoost in upscaling images will be analyzed based on the q
 ## License
 
 This project is licensed under the MIT License. For further details, please refer to the `LICENSE` file.
-
----
-
-This expanded description provides a detailed and scientific overview of the project's goals, methodology, and contributions, suitable for inclusion in a formal document or publication.
